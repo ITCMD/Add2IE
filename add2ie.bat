@@ -144,10 +144,10 @@ echo             the you would use call :Add2IE instead of call %~n0
 echo.
 echo             You can ask for admin access inside your file by adding this to the top of your file:
 echo.
-echo net session >nul 2>nul
-echo if not %%errorlevel%%==0 (echo Loading as Administrator . . .^& cd>C:\users\Public\TST.txt ^& powershell start -verb runas '%0' 8437492749374GUI ^& exit /b)
-echo set /p cdd=<C:\users\Public\TST.txt
-echo cd %cdd%
+echo net session ^>nul 2^>nul
+echo if not %%errorlevel%%==0 (echo Loading as Administrator . . .^& cd^>C:\users\Public\TST.txt ^& powershell start -verb runas '%0' ^& exit /b)
+echo set /p cdd=^<C:\users\Public\TST.txt
+echo cd %%cdd%%
 echo.
 echo.
 echo.
